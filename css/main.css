@@ -7,16 +7,6 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -95,8 +85,211 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   													DEFAULT/MOBILE STYLES
    ========================================================================== */
+/* === General Styles === */
+html {
+  font-size: 18px;
+  
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  background-color: #f9fafc;
+  color: #4d39d1;
+}
+
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 1.333em;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0.7em 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 1.667em;
+  font-weight: 700;
+  margin: 0.7em 0;
+  padding: 0;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.hero,
+.work,
+.what-i-do,
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+  text-align: center;
+}
+
+.button {
+  background-color: #fb746c;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 300;
+  color: #f9fafc;
+  padding: 0.7em 1.7em;
+}
+
+/* === Header - Footer === */
+header {
+  overflow: hidden;
+  position: relative;
+  padding: 1em;
+}
+
+header a {
+  color: #4d39d1;
+  text-decoration: none;
+}
+
+header a.icon {
+  position: absolute;
+  display: block;
+  right: 1em;
+  top: 1em;
+}
+
+/*Hide the links inside the nav menu*/
+header #links {
+  display: none;
+}
+
+/*Nav menu links*/
+ul {
+  list-style: none;
+  padding: 0.5em 0 0 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 1em 0;
+}
+
+ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: #4d39d1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+footer .social {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-top: 1.5em;
+}
+
+footer .social-icons {
+  display: flex;
+}
+
+footer .social-icons p {
+  background-color: #fb746c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+footer .social-icons a {
+  color: #f9fafc;
+}
+
+/* === Hero === */
+.hero h2 {
+  padding: 1em 0;
+}
+
+/* === Work === */
+article {
+  border-radius: 30px;
+  margin: 25px 10px;
+  padding: 0 10px;
+  max-width: 300px;
+}
+
+article img {
+  max-width: 100%;
+}
+
+.featured-work p {
+  margin: 1.5em 0;
+}
+
+span {
+  background-color: #deebfe;
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  margin: 0 6px;
+}
+
+/* === What I do === */
+.featured-skills article {
+  background-color: #ffffff;
+  padding: 50px 30px;
+}
+
+/* === Call to action === */
+.call-to-action {
+  background-color: #4d39d1;
+  border-radius: 50px;
+  color: #f9fafc;
+  margin: 0 10px;
+}
+
+.call-to-action a {
+  color: #fb746c;
+  text-decoration: none;
+}
+
+.call-to-action h1 {
+  padding-bottom: 1em;
+}
 
 /* ==========================================================================
    Helper classes
@@ -182,20 +375,45 @@ textarea {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles.
    ========================================================================== */
+/* ==========================================================================
+	   														TABLET STYLES
+========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+@media only screen and (min-width: 768px) {
+  /* === General styles === */
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+  /* === Work === */
+  .work article {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .project-text {
+    padding: 0 20px;
+  }
+
+  /* === What I do === */
+  .featured-skills {
+    display: flex;
+    max-width: 900px;
+    padding: 30px;
+  }
+
+  .featured-skills article {
+    margin-left: 20px;
+  }
+
+/* ==========================================================================
+	   														DESKTOP STYLES
+========================================================================== */
+
+@media only screen and (min-width: 1200px) {
 }
 
 /* ==========================================================================
@@ -262,4 +480,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-

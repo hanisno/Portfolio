@@ -12,6 +12,24 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
 
+    <!-- Icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Fontawesome kits-->
+    <script
+      src="https://kit.fontawesome.com/4e12b69c63.js"
+      crossorigin="anonymous"
+    ></script>
+
     <meta name="theme-color" content="#fafafa" />
   </head>
 
@@ -26,16 +44,21 @@
 
     <!-- HEADER - NAVIGATION -->
     <header>
-      <div class="content-wrapper">
-        <nav>
+      <div class="content-wrapper-header">
+        <!-- NAVIGATION LINKS hidden by default-->
+        <nav id="links">
           <ul>
             <li><a href="contact/index.html" target="_blank">Contact</a></li>
-            <li><a href="work/index.html" target="_blank">Work</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="about/index.html" target="_blank">About</a></li>
             <li><a href="#" target="_blank">Resume</a></li>
           </ul>
         </nav>
       </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </header>
 
     <!-- MAIN - HOMEPAGE -->
@@ -45,7 +68,7 @@
         <div class="content-wrapper">
           <h1>Hanis</h1>
           <h2>Creating beautiful websites</h2>
-          <button><a href="#work">View work</a></button>
+          <a href="#work" class="button">View work</a>
         </div>
       </section>
 
@@ -55,41 +78,45 @@
           <h1>Work</h1>
           <div class="featured-work">
             <article>
-              <img src="#" alt="desc" />
-              <h3>Project title</h3>
-              <label for="HTML">HTML</label>
-              <label for="CSS">CSS</label>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
-                itaque inventore ipsum dolore eius deserunt aperiam.
-              </p>
+              <img src="img/rect.png" alt="desc" />
+              <div class="project-text">
+                <h3>Project title</h3>
+                <span>HTML</span>
+                <span>CSS</span>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Optio itaque inventore ipsum dolore eius deserunt aperiam.
+                </p>
+              </div>
             </article>
 
             <article>
-              <img src="#" alt="desc" />
-              <h3>Project title</h3>
-              <label for="HTML">HTML</label>
-              <label for="CSS">CSS</label>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
-                itaque inventore ipsum dolore eius deserunt aperiam.
-              </p>
+              <img src="img/rect.png" alt="desc" />
+              <div class="project-text">
+                <h3>Project title</h3>
+                <span>HTML</span>
+                <span>CSS</span>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Optio itaque inventore ipsum dolore eius deserunt aperiam.
+                </p>
+              </div>
             </article>
 
             <article>
-              <img src="#" alt="desc" />
-              <h3>Project title</h3>
-              <label for="HTML">HTML</label>
-              <label for="CSS">CSS</label>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
-                itaque inventore ipsum dolore eius deserunt aperiam.
-              </p>
+              <img src="img/rect.png" alt="desc" />
+              <div class="project-text">
+                <h3>Project title</h3>
+                <span>HTML</span>
+                <span>CSS</span>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Optio itaque inventore ipsum dolore eius deserunt aperiam.
+                </p>
+              </div>
             </article>
           </div>
-          <button>
-            <a href="work/index.html" target="_blank">View more</a>
-          </button>
+          <a href="#work" class="button">View more</a>
         </div>
       </section>
 
@@ -99,7 +126,7 @@
           <h1>What I do</h1>
           <div class="featured-skills">
             <article>
-              <img src="#" alt="desc" />
+              <img src="img/rect.png" alt="desc" />
               <h4>Skill title</h4>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
@@ -108,7 +135,7 @@
             </article>
 
             <article>
-              <img src="#" alt="desc" />
+              <img src="img/rect.png" alt="desc" />
               <h4>Skill title</h4>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
@@ -117,7 +144,7 @@
             </article>
 
             <article>
-              <img src="#" alt="desc" />
+              <img src="img/rect.png" alt="desc" />
               <h4>Skill title</h4>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
