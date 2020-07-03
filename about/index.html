@@ -10,8 +10,20 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="..css/normalize.css" />
-    <link rel="stylesheet" href="..css/main.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- Icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -27,25 +39,44 @@
 
     <!-- HEADER - ABOUT -->
     <header>
-      <div class="content-wrapper">
-        <nav>
+      <div class="content-wrapper-header">
+        <!-- NAVIGATION LINKS hidden by default-->
+        <nav id="links">
           <ul>
-            <li><a href="..contact/index.html" target="_blank">Contact</a></li>
-            <li><a href="..work/index.html" target="_blank">Work</a></li>
-            <li><a href="..about/index.html" target="_blank">About</a></li>
+            <li><a href="../contact/index.html" target="_blank">Contact</a></li>
+            <li><a href="../work/index.html">Work</a></li>
+            <li><a href="#about" target="_blank">About</a></li>
             <li><a href="#" target="_blank">Resume</a></li>
           </ul>
         </nav>
       </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </header>
 
     <!-- MAIN - ABOUT -->
     <main>
-      <div class="content-wrapper"></div>
+      <section class="about">
+        <div class="content-wrapper">
+          <h1>I'm Hanis</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsum
+            commodi odio magni minus maxime, nemo iste unde reprehenderit aut
+            excepturi, aliquam sequi dolor eaque quo deleniti esse? Doloribus,
+            ut.<br />Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Laudantium officia pariatur temporibus expedita voluptates libero
+            debitis amet facilis, ut rem labore, necessitatibus voluptatem
+            quaerat ea beatae ab doloribus! Voluptas, reiciendis.
+          </p>
+          <img src="../img/2.png" alt="A picture of me" />
+        </div>
+      </section>
     </main>
 
     <!-- SCRIPTS -->
-    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="../js/vendor/modernizr-3.8.0.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -54,10 +85,10 @@
     <script>
       window.jQuery ||
         document.write(
-          '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
+          '<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>'
         );
     </script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
