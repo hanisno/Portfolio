@@ -98,6 +98,9 @@ body {
   font-size: 1em;
   background-color: #f9fafc;
   color: #4d39d1;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 a  {
@@ -114,7 +117,7 @@ p {
 h1 {
   font-size: 3.5em;
   font-weight: 900;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -124,22 +127,22 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: 700;
-  margin: 0.7em 0;
+  margin: 0.7em auto;
   padding: 0;
 }
 
 h4 {
   font-size: 1.667em;
   font-weight: 700;
-  margin: 0.7em 0;
+  margin: 0.7em auto;
   padding: 0;
 }
 
 .content-wrapper {
   width: 90%;
-  margin: 40px 0;
+  margin: 40px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,7 +289,7 @@ span {
   background-color: #4d39d1;
   border-radius: 50px;
   color: #f9fafc;
-  margin: 0 10px;
+  margin: 0 auto;
   box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
     -webkit-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);
     -moz-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2); 
@@ -303,10 +306,11 @@ span {
 
 /* === About === */
 .about .content-wrapper {
+  width: 90%;
   background-color: #ffffff;
   border-radius: 50px;
   padding: 40px 10px;
-  margin: 5px 0;
+  margin: 5px auto;
   box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
     -webkit-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);
     -moz-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);          
@@ -322,6 +326,50 @@ span {
   padding-top: 1em;
   object-fit: cover;
 }
+
+/* === Contact === */
+.contact {
+  padding: 0 20px;
+}
+
+.contact a {
+  font-size: 1.2em;
+}
+
+.contact h1 {
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 90%;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 30px 50px;
+  margin: 40px auto;
+  box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
+    -webkit-box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
+    -moz-box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);   
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+input, textarea {
+  padding: 10px 10px;
+  margin: 10px auto;
+  border: none;
+  background-color: #f9fafc;
+}
+
+textarea {
+  height: 60px;
+}
+/* === Work detail === */
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
