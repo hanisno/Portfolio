@@ -157,6 +157,8 @@ h4 {
 .about,
 .contact,
 .work-detail {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,16 +268,13 @@ article {
   max-width: 300px;
 }
 
-.featured-work p {
-  margin: 1.5em 0;
-}
-
 span {
   background-color: #deebfe;
   border-radius: 50px;
   text-transform: uppercase;
   padding: 6px 20px;
-  margin: 0 6px;
+  margin: 0 auto;
+  line-height: 2.5em;
 }
 
 /* === What I do === */
@@ -289,7 +288,6 @@ span {
   background-color: #4d39d1;
   border-radius: 50px;
   color: #f9fafc;
-  margin: 0 auto;
   box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
     -webkit-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);
     -moz-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2); 
@@ -320,7 +318,7 @@ span {
   padding: 0 1em;
 }
 
-.about img {
+.about img, .work-detail img {
   border-radius: 30px;
   max-width: 90%;
   padding-top: 1em;
@@ -328,24 +326,16 @@ span {
 }
 
 /* === Contact === */
-.contact {
-  padding: 0 20px;
+.info-sub {
+  margin: 30px 0 0 0;
 }
 
-.contact a {
-  font-size: 1.2em;
-}
-
-.contact h1 {
-  margin-bottom: 20px;
-}
-
-.contact-form {
+.contact-form, .work-detail-text {
   max-width: 90%;
   background-color: #ffffff;
   border-radius: 50px;
-  padding: 30px 50px;
-  margin: 40px auto;
+  padding: 30px;
+  margin: 30px auto;
   box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
     -webkit-box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
     -moz-box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);   
@@ -369,6 +359,22 @@ textarea {
   height: 60px;
 }
 /* === Work detail === */
+.button-container {
+  margin: 30px 0;
+}
+
+.work-detail p {
+  padding: 0 22px;
+}
+
+.info-sub .button-container {
+  padding: 30px 0 20px 0;
+}
+ 
+.info-sub .button-container a {
+  font-size: 1.3em;
+  font-weight: 700;
+}
 
 /* ==========================================================================
    Helper classes
