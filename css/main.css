@@ -118,7 +118,7 @@ h1 {
   font-size: 3.5em;
   font-weight: 900;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 10px 0;
 }
 
 h2 {
@@ -171,6 +171,7 @@ section {
   font-weight: 300;
   color: #f9fafc;
   padding: 10px 20px;
+  line-height: 65px;
 }
 
 img {
@@ -284,12 +285,18 @@ span {
 
 .skills article {
   background-color: #fcc6c6;
-  padding: 50px 65px;
+  padding: 40px 30px;
   margin: 40px;
+  max-width: 300px;
 }
 
 .skills article i {
   font-size: 6em;
+  padding: 10px;
+}
+
+.skills-text {
+  padding-top: 15px;
 }
 
 /* === Call to action === */
@@ -492,8 +499,7 @@ textarea {
 /* ==========================================================================
 	   														TABLET STYLES
 ========================================================================== */
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   /* === Footer === */
   footer nav ul {
     display: flex;
@@ -501,35 +507,28 @@ textarea {
   }
 
   /* === Work === */
-  .featured-work article {
-    /*display: flex;
-    flex-flow: row;
+  .work article,
+  .skills article {
+    display: flex;
+    flex-flow: row nowrap;
     text-align: left;
-    padding: 30px;*/
   }
 
-  /*.featured-work article img {
+  .skills article {
+    max-width: 700px;
+  }
+
+  .work article img {
     width: 100%;
     max-width: 400px;
     height: auto;
-  }*/
-
-  .project-text,
-  .skill-text {
-    padding: 0 20px;
+    object-fit: contain;
   }
 
   /* ===  Skill === */
-  .featured-skills article {
-    max-width: 500px;
-    display: flex; 
-    padding-top: 40px;
-    flex-flow: row;
-    text-align: left;
-  }
-
-  .featured-skills article img {
-
+  .skills-text {
+    padding-top: 0;
+    padding-left: 15px;
   }
 
   /* === Call to action === */
@@ -539,25 +538,21 @@ textarea {
 ========================================================================== */
 
 @media only screen and (min-width: 1023px) {
-  .work .content-wrapper {
-    /*max-width: 170vh;*/
-  }
-
-  .featured-skills {
+  .skills .content-wrapper {
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
   }
 
-  .featured-skills article {
-    display: inline-block; 
+  .skills article {
+    display: block;
     text-align: center;
-    padding: 50px 30px;
     max-width: 200px;
   }
 
-  .featured-skills article img {
-    /*width: 100%;*/
+  .skills-text {
+    padding-left: 0;
   }
-
 }
 
 @media only screen and (min-width: 2550px) {
