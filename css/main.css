@@ -134,36 +134,30 @@ h3 {
 }
 
 h4 {
-  font-size: 1.667em;
+  font-size: 1.4em;
   font-weight: 700;
   margin: 0.7em auto;
   padding: 0;
 }
 
-.content-wrapper {
-  width: 90%;
-  margin: 40px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  text-align: center;
-}
-
 .hero,
 .work,
-.what-i-do,
-.call-to-action,
 .about,
 .contact,
 .work-detail {
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 95vh;
+  margin: 0 auto;
   text-align: center;
+}
+
+.content-wrapper {
+  /*width: 90%;
+  margin: 40px auto;
+  display: flex;*/
+  flex-flow: column wrap;
 }
 
 .button {
@@ -178,7 +172,8 @@ h4 {
 }
 
 img {
-  max-width: 100%;
+  /*max-width: 100%;
+  height: auto;*/
 }
 
 /* === Header - Footer === */
@@ -213,7 +208,7 @@ ul {
 }
 
 ul li {
-  padding: 1em 0;
+  padding: 18px;
 }
 
 ul li a {
@@ -263,9 +258,8 @@ footer .social-icons a {
 /* === Work === */
 article {
   border-radius: 30px;
-  margin: 25px 10px;
-  padding: 0 10px;
-  max-width: 300px;
+  margin: 25px 20px;
+  padding: 5px 10px; 
 }
 
 span {
@@ -278,19 +272,44 @@ span {
 }
 
 /* === What I do === */
+.what-i-do {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .featured-skills article {
   background-color: #ffffff;
   padding: 50px 30px;
+  max-width: 200px;
 }
 
 /* === Call to action === */
 .call-to-action {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.rounded-square-container {
+  max-width: 150vh;
+  min-height: 90vh;
+  margin: 35px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #4d39d1;
   border-radius: 50px;
   color: #f9fafc;
   box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
     -webkit-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);
     -moz-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2); 
+}
+
+.call-to-action .content-wrapper {
+  padding: 10px 20%;
 }
 
 .call-to-action a {
@@ -468,38 +487,75 @@ textarea {
 ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /* === General styles === */
-
-  /* === Work === */
-  .work article {
-    max-width: 100%;
+  /* === Footer === */
+  footer nav ul {
     display: flex;
-    flex-flow: row;
-    text-align: left;
-    padding: 30px;
+    flex-flow: row wrap;
   }
 
-  .project-text {
+  /* === Work === */
+  .featured-work article {
+    /*display: flex;
+    flex-flow: row;
+    text-align: left;
+    padding: 30px;*/
+  }
+
+  /*.featured-work article img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }*/
+
+  .project-text,
+  .skill-text {
     padding: 0 20px;
   }
 
   /* === What I do === */
-  .featured-skills {
-    display: flex;
-    max-width: 900px;
-    padding: 30px;
-  }
-
   .featured-skills article {
-    margin-left: 20px;
+    max-width: 500px;
+    display: flex; 
+    padding-top: 40px;
+    flex-flow: row;
+    text-align: left;
   }
 
+  .featured-skills article img {
+    width: 25%;
+    object-fit: contain;
+  }
+
+  /* === Call to action === */
+ 
 /* ==========================================================================
 	   														DESKTOP STYLES
 ========================================================================== */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1023px) {
+  .work .content-wrapper {
+    /*max-width: 170vh;*/
+  }
+
+  .featured-skills {
+    display: flex;
+  }
+
+  .featured-skills article {
+    display: inline-block; 
+    text-align: center;
+    padding: 50px 30px;
+    max-width: 200px;
+  }
+
+  .featured-skills article img {
+    /*width: 100%;*/
+  }
+
 }
+
+@media only screen and (min-width: 2550px) {
+
 
 /* ==========================================================================
    Print styles.
