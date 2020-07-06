@@ -147,7 +147,6 @@ section {
 }
 
 .hero,
-.about,
 .contact,
 .work-detail {
   display: flex;
@@ -188,9 +187,7 @@ img {
 
 /* === Header - Footer === */
 header {
-  overflow: hidden;
-  position: relative;
-  padding: 1em;
+  float: right;
 }
 
 header a {
@@ -349,26 +346,39 @@ span {
 }
 
 /* === About === */
-.about .content-wrapper {
-  width: 90%;
-  background-color: #ffffff;
+.about {
+  padding: 0 20px;
+}
+
+.about .rounded-square-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1vh;
+  margin: 0 auto;
+  padding: 50px 45px;
   border-radius: 50px;
-  padding: 40px 10px;
-  margin: 5px auto;
+  background-color: #ffffff;
+  color: #4d39d1;
   box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
     -webkit-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);
-    -moz-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);          
+    -moz-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);       
 }
 
-.about p {
-  padding: 0 1em;
+.about-text {
+  text-align: left;
+  padding: 1em 1.5em;
 }
 
-.about img, .work-detail img {
+.about img {
   border-radius: 30px;
-  max-width: 90%;
-  padding-top: 1em;
-  object-fit: cover;
+}
+
+.image-container, .work-detail img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* === Contact === */
@@ -512,7 +522,10 @@ textarea {
 /* ==========================================================================
 	   														TABLET STYLES
 ========================================================================== */
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 767px){
+  section {
+    margin: 0 auto;
+  }
   /* === Footer === */
   footer nav ul {
     display: flex;
@@ -557,9 +570,31 @@ textarea {
   .rounded-square-container {
     max-width: 150vh;
   }
-  .call-to-action .content-wrapper {
+  .call-to-action .content-wrapper, {
     max-width: 767px;
   }
+
+  /* === About === */
+  .about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-text {
+    max-width: 50%;
+  }
+
+  .about .content-wrapper {  
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 767px;
+  }
+
+  /*.about .rounded-square-container {
+    margin: 23vh auto;   
+  }*/
  
 /* ==========================================================================
 	   														DESKTOP STYLES
@@ -581,6 +616,8 @@ textarea {
   .skills-text {
     padding-left: 0;
   }
+
+  
 }
 
 @media only screen and (min-width: 2550px) {
