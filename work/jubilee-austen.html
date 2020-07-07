@@ -67,9 +67,11 @@
       <section class="work-detail">
         <div class="content-wrapper">
           <h1>Jubilee Austen</h1>
-          <img src="../img/rect.png" alt="Work image" />
+          <div class="image-container">
+            <img src="../img/template.png" alt="Work image" />
+          </div>
           <div class="work-detail-text">
-            <div class="info-sub">
+            <div class="work-detail-sub">
               <h3>Description</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
@@ -77,22 +79,25 @@
                 necessitatibus perspiciatis.
               </p>
             </div>
-            <div class="info-sub">
+            <div class="work-detail-sub">
               <h3>Tech</h3>
               <span>HTML</span>
               <span>CSS</span>
             </div>
-            <div class="info-sub">
+            <div class="work-detail-sub">
               <div class="button-container">
-                <a href="#" class="button">Live Preview</a>
+                <a href="#" class="button" id="button-full-width">Live Demo</a>
+              </div>
+              <div class="button-container">
+                <a href="#" class="button" id="button-full-width"
+                  >Github Code</a
+                >
               </div>
             </div>
           </div>
           <div class="pagination">
-            <div class="button-container">
-              <a href="#" class="button"><</a>
-              <a href="#" class="button">></a>
-            </div>
+            <a href="#" class="button"><</a>
+            <a href="#" class="button">></a>
           </div>
         </div>
       </section>

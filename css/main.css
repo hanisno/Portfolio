@@ -146,8 +146,7 @@ section {
  margin: 60px auto;
 }
 
-.hero,
-.work-detail {
+.hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,7 +175,7 @@ section {
   font-weight: 400;
   color: #f9fafc;
   padding: 10px 20px;
-  line-height: 65px;
+  /*line-height: 65px;*/
 }
 
 img {
@@ -401,6 +400,18 @@ span {
 }
 
 /* === Work detail === */
+
+.work-detail {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.work-detail img {
+  width: 80%;
+  max-width: 80vh;
+  margin: 0 auto;
+}
+
 .button-container {
   margin: 30px 0;
 }
@@ -420,15 +431,28 @@ span {
   padding: 0 22px;
 }
 
-.info-sub .button-container {
-  padding: 30px 0 20px 0;
-}
- 
-.info-sub .button-container a {
+#button-full-width {
+  display: block;
+  width: 80%;
+  line-height: 0;
   font-size: 1.3em;
   font-weight: 700;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+.pagination {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 4%;
+}
+
+.pagination .button {
+  background-color: #deebfe ;
+  color: #4d39d1;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -578,11 +602,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 10%;
-  }
-
-  .about .rounded-square-container {
-    max-width: 900px;
+    margin: 0 auto;
   }
 
   .about-text {
@@ -592,6 +612,7 @@ span {
   .about .content-wrapper {  
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-around;
   }
 
   .contact {
@@ -604,6 +625,14 @@ span {
 
   .contact .rounded-square-container {
     min-width: 100%;
+  }
+
+  .work-detail {
+    margin: 60px 10%;
+  }
+
+  #button-full-width {
+    width: 50%;
   }
 /* ==========================================================================
 	   														DESKTOP STYLES
@@ -624,13 +653,28 @@ span {
 
   .skills-text {
     padding-left: 0;
+  } 
+  
+  .about  {  
+    max-width: 150vh;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
-  
+  .work-detail {
+    max-width: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media only screen and (min-width: 2550px) {
-
+@media only screen and (min-width: 1500px) {
+  .about  {  
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* ==========================================================================
    Print styles.
