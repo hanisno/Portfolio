@@ -90,7 +90,6 @@ textarea {
 /* === General Styles === */
 html {
   font-size: 15px;
-  
 }
 
 body {
@@ -103,7 +102,7 @@ body {
   padding: 0;
 }
 
-a  {
+a {
   text-decoration: none;
   color: #4d39d1;
 }
@@ -143,7 +142,7 @@ h4 {
 }
 
 section {
- margin: 60px auto;
+  margin: 60px auto;
 }
 
 .hero {
@@ -321,9 +320,9 @@ span {
   border-radius: 50px;
   background-color: #4d39d1;
   color: #f9fafc;
-  box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
-    -webkit-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);
-    -moz-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2); 
+  box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -webkit-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
 }
 
 .call-to-action .content-wrapper {
@@ -359,9 +358,9 @@ span {
   border-radius: 50px;
   background-color: #ffffff;
   color: #4d39d1;
-  box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
-    -webkit-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);
-    -moz-box-shadow:  6px 9px 23px 0px rgba(117,138,180,0.2);       
+  box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -webkit-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
 }
 
 .about-text {
@@ -373,7 +372,8 @@ span {
   border-radius: 30px;
 }
 
-.image-container, .work-detail img {
+.image-container,
+.work-detail img {
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -422,9 +422,9 @@ span {
   border-radius: 50px;
   padding: 30px;
   margin: 30px auto;
-  box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
-    -webkit-box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);
-    -moz-box-shadow: 6px 9px 23px 0px rgba(117,138,180,0.2);   
+  box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -webkit-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
 }
 
 .work-detail p {
@@ -450,7 +450,7 @@ span {
 }
 
 .pagination .button {
-  background-color: #deebfe ;
+  background-color: #deebfe;
   color: #4d39d1;
 }
 /* ==========================================================================
@@ -556,7 +556,10 @@ span {
 
   /* === Work === */
   .work {
-    max-width: 150vh;
+    /* max-width: 150vh;*/
+    /*max-width: 2000px;*/
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .work article,
@@ -564,6 +567,13 @@ span {
     display: flex;
     flex-flow: row nowrap;
     text-align: left;
+  }
+
+  .work article img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
   }
 
   #article-b {
@@ -575,12 +585,7 @@ span {
     max-width: 700px;
   }
 
-  .work article img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    object-fit: contain;
-  }
+  
 
   /* ===  Skill === */
   .skills-text {
@@ -593,12 +598,12 @@ span {
     max-width: 150vh;
   }
 
-  .call-to-action .content-wrapper, {
+  .call-to-action .content-wrapper {
     max-width: 767px;
   }
 
   /* === About === */
-  .about  {
+  .about {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -610,7 +615,7 @@ span {
     max-width: 50%;
   }
 
-  .about .content-wrapper {  
+  .about .content-wrapper {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
@@ -635,11 +640,18 @@ span {
   #button-full-width {
     width: 50%;
   }
-/* ==========================================================================
+  /* ==========================================================================
 	   														DESKTOP STYLES
 ========================================================================== */
 
 @media only screen and (min-width: 1023px) {
+  .work {
+      /* max-width: 150vh;*/
+      /*max-width: 2000px;*/
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   .skills .content-wrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -654,9 +666,9 @@ span {
 
   .skills-text {
     padding-left: 0;
-  } 
-  
-  .about  {  
+  }
+
+  .about {
     max-width: 150vh;
     margin-left: 10%;
     margin-right: 10%;
@@ -670,7 +682,8 @@ span {
 }
 
 @media only screen and (min-width: 1500px) {
-  .about  {  
+
+  .about {
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
