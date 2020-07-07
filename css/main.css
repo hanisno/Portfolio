@@ -18,12 +18,12 @@
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #deebfe;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #deebfe;
   text-shadow: none;
 }
 
@@ -145,24 +145,9 @@ section {
   margin: 60px auto;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 95vh;
-  text-align: center;
-}
-
-.work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 50vh;
-}
-
-.wrapper-container {
-  /*width: 100%;*/
+img {
+  width: 100%;
+  height: auto;
 }
 
 .button {
@@ -177,9 +162,17 @@ section {
   /*line-height: 65px;*/
 }
 
-img {
-  width: 100%;
-  height: auto;
+.rounded-square-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+  margin: 0 auto;
+  border-radius: 50px;
+  box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -webkit-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
 }
 
 /* === Header - Footer === */
@@ -222,6 +215,7 @@ ul li a {
   color: #4d39d1;
 }
 
+/*Footer*/
 footer {
   display: flex;
   justify-content: center;
@@ -233,7 +227,8 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .social-icons {
@@ -241,13 +236,13 @@ footer {
 }
 
 .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fb746c;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 1em;
 }
 
@@ -256,11 +251,27 @@ footer {
 }
 
 /* === Hero === */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 95vh;
+}
+
 .hero h2 {
   padding: 1em 0;
 }
 
 /* === Work === */
+.work {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  text-align: center;
+  min-height: 50vh;
+}
+
 article {
   border-radius: 30px;
   padding: 40px 20px 10px 20px;
@@ -310,19 +321,9 @@ span {
   padding: 0 20px;
 }
 
-.rounded-square-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 90vh;
-  margin: 0 auto;
-  border-radius: 50px;
+.call-to-action .rounded-square-container {
   background-color: #4d39d1;
   color: #f9fafc;
-  box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
-  -webkit-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
-  -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
 }
 
 .call-to-action .content-wrapper {
@@ -349,18 +350,10 @@ span {
 
 .about .rounded-square-container,
 .contact .rounded-square-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 1vh;
-  margin: 0 auto;
   padding: 50px 45px;
-  border-radius: 50px;
   background-color: #ffffff;
   color: #4d39d1;
-  box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
-  -webkit-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
-  -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
 }
 
 .about-text {
@@ -400,7 +393,6 @@ span {
 }
 
 /* === Work detail === */
-
 .work-detail {
   padding: 0 20px;
   text-align: center;
@@ -543,6 +535,7 @@ span {
 /* ==========================================================================
 	   														TABLET STYLES
 ========================================================================== */
+
 @media only screen and (min-width: 767px) {
   /*section {
     margin: 0 auto;
@@ -581,13 +574,11 @@ span {
     text-align: right;
   }
 
+  /* === Skill === */
   .skills article {
     max-width: 700px;
   }
 
-  
-
-  /* ===  Skill === */
   .skills-text {
     padding-top: 0;
     padding-left: 15px;
@@ -621,6 +612,7 @@ span {
     justify-content: space-around;
   }
 
+  /* === Contact === */
   .contact {
     min-height: 100vh;
     display: flex;
@@ -633,6 +625,7 @@ span {
     min-width: 100%;
   }
 
+  /* === Work detail === */
   .work-detail {
     margin: 60px 6%;
   }
@@ -640,18 +633,21 @@ span {
   #button-full-width {
     width: 50%;
   }
-  /* ==========================================================================
+}
+/* ==========================================================================
 	   														DESKTOP STYLES
 ========================================================================== */
 
 @media only screen and (min-width: 1023px) {
+  /* === Work === */
   .work {
-      /* max-width: 150vh;*/
-      /*max-width: 2000px;*/
+    /* max-width: 150vh;*/
+    /*max-width: 2000px;*/
     margin-left: 10%;
     margin-right: 10%;
   }
 
+  /* === Skills === */
   .skills .content-wrapper {
     display: flex;
     flex-flow: row nowrap;
@@ -668,12 +664,14 @@ span {
     padding-left: 0;
   }
 
+  /* === About === */
   .about {
     max-width: 150vh;
     margin-left: 10%;
     margin-right: 10%;
   }
 
+  /* === Work detail === */
   .work-detail {
     max-width: 120vh;
     margin-left: auto;
@@ -682,7 +680,7 @@ span {
 }
 
 @media only screen and (min-width: 1500px) {
-
+  /* === About === */
   .about {
     max-width: 1500px;
     margin-left: auto;
