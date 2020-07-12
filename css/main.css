@@ -370,6 +370,12 @@ footer {
   color: #f9fafc;
 }
 
+.lastly {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: column wrap;
+}
 /* === Hero === */
 .hero {
   display: flex;
@@ -728,6 +734,46 @@ span {
     filter: drop-shadow(-6px 41px 0px #f3f3f3);
   }
 
+  .svg-e6,
+  .svg-e7,
+  .svg-e9,
+  .svg-e10,
+  .svg-waves {
+    position: absolute;
+    z-index: -9;
+  }
+
+  .svg-e6 {
+    left: 8%;
+    top: 3%;
+    right: auto;
+    bottom: auto;
+    max-width: 3%;
+  }
+
+  .svg-e7 {
+    right: 26%;
+    top: 17%;
+    left: auto;
+    bottom: auto;
+    max-width: 3%;
+  }
+
+  .svg-e9 {
+    left: 15%;
+    top: 19%;
+    right: auto;
+    bottom: auto;
+    max-width: 2%;
+  }
+
+  .svg-e10 {
+    right: 19%;
+    top: 3%;
+    left: auto;
+    bottom: auto;
+    max-width: 2%;
+  }
   /*-------------------------hover stuff*/
   /*-------------------------geenral link hover stuff*/
   .footer-navigation a:hover,
