@@ -376,6 +376,105 @@ footer {
   align-items: flex-end;
   flex-flow: column wrap;
 }
+
+/* == SVG ==*/
+.svg-lt,
+.svg-lm,
+.svg-lb,
+.svg-rt,
+.svg-rm,
+.svg-rb {
+  position: absolute;
+  z-index: -10;
+  width: 124%;
+}
+
+.svg-lt {
+  left: -83vw;
+  top: -8vh;
+  right: auto;
+  bottom: auto;
+  filter: drop-shadow(15px 10px 0px #f3f3f3);
+}
+
+.svg-lm {
+  left: -87vw;
+  top: 18vh;
+  right: auto;
+  bottom: auto;
+}
+
+.svg-lb {
+  left: -88vw;
+  top: 44.8vh;
+  right: auto;
+  bottom: auto;
+  filter: drop-shadow(20px 10px 0px #f3f3f3);
+}
+
+.svg-rt {
+  left: auto;
+  top: 2vh;
+  right: -86vw;
+  bottom: auto;
+}
+
+.svg-rm {
+  left: auto;
+  top: 28.3vh;
+  right: -98vw;
+  bottom: auto;
+}
+
+.svg-rb {
+  left: auto;
+  top: 55vh;
+  right: -102.5vw;
+  bottom: auto;
+  filter: drop-shadow(-6px 41px 0px #f3f3f3);
+}
+
+.svg-e6,
+.svg-e7,
+.svg-e9,
+.svg-e10,
+.svg-waves {
+  position: absolute;
+  z-index: -9;
+}
+
+.svg-e6 {
+  left: 2vw;
+  top: 13vh;
+  right: auto;
+  bottom: auto;
+  max-width: 3%;
+}
+
+.svg-e7 {
+  right: 10vw;
+  top: 70.8vh;
+  left: auto;
+  bottom: auto;
+  max-width: 3%;
+}
+
+.svg-e9 {
+  left: 15%;
+  top: 81vh;
+  right: auto;
+  bottom: auto;
+  max-width: 2%;
+}
+
+.svg-e10 {
+  right: 7vw;
+  top: 20vh;
+  left: auto;
+  bottom: auto;
+  max-width: 2%;
+}
+
 /* === Hero === */
 .hero {
   display: flex;
@@ -677,103 +776,6 @@ span {
     overflow: hidden;
   }
 
-  .svg-lt,
-  .svg-lm,
-  .svg-lb,
-  .svg-rt,
-  .svg-rm,
-  .svg-rb {
-    position: absolute;
-    z-index: -10;
-    /* min-width: 30%; */
-    max-width: 40%;
-  }
-
-  .svg-lt {
-    left: -13%;
-    top: -1%;
-    right: auto;
-    bottom: auto;
-    filter: drop-shadow(15px 10px 0px #f3f3f3);
-  }
-
-  .svg-lm {
-    left: -11%;
-    top: 5%;
-    right: auto;
-    bottom: auto;
-  }
-
-  .svg-lb {
-    left: -12%;
-    top: 13%;
-    right: auto;
-    bottom: auto;
-    filter: drop-shadow(20px 10px 0px #f3f3f3);
-  }
-
-  .svg-rt {
-    left: auto;
-    top: -1%;
-    right: -13%;
-    bottom: auto;
-  }
-
-  .svg-rm {
-    left: auto;
-    top: 5%;
-    right: -10%;
-    bottom: auto;
-  }
-
-  .svg-rb {
-    left: auto;
-    top: 14%;
-    right: -8%;
-    bottom: auto;
-    filter: drop-shadow(-6px 41px 0px #f3f3f3);
-  }
-
-  .svg-e6,
-  .svg-e7,
-  .svg-e9,
-  .svg-e10,
-  .svg-waves {
-    position: absolute;
-    z-index: -9;
-  }
-
-  .svg-e6 {
-    left: 8%;
-    top: 3%;
-    right: auto;
-    bottom: auto;
-    max-width: 3%;
-  }
-
-  .svg-e7 {
-    right: 26%;
-    top: 17%;
-    left: auto;
-    bottom: auto;
-    max-width: 3%;
-  }
-
-  .svg-e9 {
-    left: 15%;
-    top: 19%;
-    right: auto;
-    bottom: auto;
-    max-width: 2%;
-  }
-
-  .svg-e10 {
-    right: 19%;
-    top: 3%;
-    left: auto;
-    bottom: auto;
-    max-width: 2%;
-  }
   /*-------------------------hover stuff*/
   /*-------------------------geenral link hover stuff*/
   .footer-navigation a:hover,
@@ -942,6 +944,102 @@ span {
 ========================================================================== */
 
 @media only screen and (min-width: 1023px) {
+  /* SVG stuff ==*/
+  .svg-lt,
+  .svg-lm,
+  .svg-lb,
+  .svg-rt,
+  .svg-rm,
+  .svg-rb {
+    max-width: 40%;
+  }
+
+  .svg-lt {
+    left: -13%;
+    top: -1%;
+    right: auto;
+    bottom: auto;
+    filter: drop-shadow(15px 10px 0px #f3f3f3);
+  }
+
+  .svg-lm {
+    left: -11%;
+    top: 5%;
+    right: auto;
+    bottom: auto;
+  }
+
+  .svg-lb {
+    left: -12%;
+    top: 13%;
+    right: auto;
+    bottom: auto;
+    filter: drop-shadow(20px 10px 0px #f3f3f3);
+  }
+
+  .svg-rt {
+    left: auto;
+    top: -1%;
+    right: -13%;
+    bottom: auto;
+  }
+
+  .svg-rm {
+    left: auto;
+    top: 5%;
+    right: -10%;
+    bottom: auto;
+  }
+
+  .svg-rb {
+    left: auto;
+    top: 14%;
+    right: -8%;
+    bottom: auto;
+    filter: drop-shadow(-6px 41px 0px #f3f3f3);
+  }
+
+  .svg-e6,
+  .svg-e7,
+  .svg-e9,
+  .svg-e10,
+  .svg-waves {
+    position: absolute;
+    z-index: -9;
+  }
+
+  .svg-e6 {
+    left: 8%;
+    top: 3%;
+    right: auto;
+    bottom: auto;
+    max-width: 3%;
+  }
+
+  .svg-e7 {
+    right: 26%;
+    top: 17%;
+    left: auto;
+    bottom: auto;
+    max-width: 3%;
+  }
+
+  .svg-e9 {
+    left: 15%;
+    top: 19%;
+    right: auto;
+    bottom: auto;
+    max-width: 2%;
+  }
+
+  .svg-e10 {
+    right: 19%;
+    top: 3%;
+    left: auto;
+    bottom: auto;
+    max-width: 2%;
+  }
+
   /* === Work === */
   .work {
     /* max-width: 150vh;*/
