@@ -181,7 +181,17 @@ img {
   -webkit-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
   -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
 }
+/* === AOS Custom Animaton ==*/
 
+[data-aos="my-easing"] {
+  transform: translateX(-100%);
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 3, 0.4, 2);
+  transition-property: transform;
+}
+[data-aos="my-easing"].aos-animate {
+  transform: translateX(0);
+}
 /* === Header - Footer === */
 /* Menu */
 #menu-content {
