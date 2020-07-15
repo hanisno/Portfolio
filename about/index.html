@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Icon library to show a hamburger menu (bars) on small screens -->
     <link
@@ -64,7 +65,7 @@
 
     <!-- MAIN - ABOUT -->
     <main>
-      <section class="about">
+      <section class="about" data-aos="zoom-in" data-aos-duration="1200">
         <div class="rounded-square-container">
           <div class="content-wrapper">
             <div class="about-text">
@@ -103,7 +104,11 @@
           '<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>'
         );
     </script>
-    <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../js/plugins.js"></script>
   </body>
 </html>

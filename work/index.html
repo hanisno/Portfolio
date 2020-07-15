@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Icon library to show a hamburger menu (bars) on small screens -->
     <link
@@ -76,7 +77,12 @@
           <div class="content-wrapper">
             <a href="work/jubilee-austen.html">
               <article>
-                <img src="../img/template.png" alt="desc" />
+                <img
+                  src="../img/template.png"
+                  alt="desc"
+                  data-aos="slide-right"
+                  data-aos-duration="1500"
+                />
                 <div class="work-text">
                   <h3>Project title</h3>
                   <span>HTML</span>
@@ -92,7 +98,12 @@
             </a>
             <a href="work/jubilee-austen.html">
               <article id="article-b">
-                <img src="../img/template.png" alt="desc" />
+                <img
+                  src="../img/template.png"
+                  alt="desc"
+                  data-aos="slide-left"
+                  data-aos-duration="1500"
+                />
                 <div class="work-text">
                   <h3>Project title</h3>
                   <span>HTML</span>
@@ -108,7 +119,12 @@
             </a>
             <a href="work/jubilee-austen.html">
               <article>
-                <img src="../img/template.png" alt="desc" />
+                <img
+                  src="../img/template.png"
+                  alt="desc"
+                  data-aos="slide-right"
+                  data-aos-duration="1500"
+                />
                 <div class="work-text">
                   <h3>Project title</h3>
                   <span>HTML</span>
@@ -144,17 +160,17 @@
           <!-- SOCIAL -->
           <div class="social">
             <div class="social-icons">
-              <p>
+              <p data-aos="fade-right" data-aos-duration="1200">
                 <a href="https://www.facebook.com/" target="_blank">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </p>
-              <p>
+              <p data-aos="fade-in" data-aos-duration="1200">
                 <a href="https://www.twitter.com/" target="_blank">
                   <i class="fab fa-twitter"></i>
                 </a>
               </p>
-              <p>
+              <p data-aos="fade-left" data-aos-duration="1200">
                 <a href="https://www.instagram.com/" target="_blank">
                   <i class="fab fa-instagram"></i>
                 </a>
@@ -170,9 +186,17 @@
 
       <!-- LASTLY -->
       <div class="lastly">
-        <p>Made with love by <a href="../">Hanis</a> 2020</p>
+        <p>Made with love by <a href="./">Hanis</a> 2020</p>
       </div>
     </footer>
+    <img
+      src="../img/waves-footer.svg"
+      alt=""
+      class="svg-waves"
+      data-aos="slide-up"
+      data-aos-duration="1000"
+      data-aos-once="true"
+    />
 
     <!-- SCRIPTS -->
     <script src="../js/vendor/modernizr-3.8.0.min.js"></script>
@@ -187,7 +211,11 @@
           '<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>'
         );
     </script>
-    <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../js/plugins.js"></script>
   </body>
 </html>
