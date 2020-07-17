@@ -2,7 +2,7 @@ $("#menu-toggle").click(function () {
   $("header").toggleClass("open");
 });
 
-/*credit to lovromar on jsfiddle for the parallax effect code*/
+/*Credit to lovromar on jsfiddle for the parallax effect code*/
 var currentX = "";
 var currentY = "";
 var movementConstant = 0.002;
@@ -20,5 +20,32 @@ $("main").mousemove(function (e) {
     var newY = $(el).position().top + movementy;
     $(el).css("left", newX + "px");
     $(el).css("top", newY + "px");
+  });
+});
+
+/*Work detail image slides*/
+$(document).ready(function () {
+  $(".next").on("click", function () {
+    var activeImg = $(".active");
+    var nextImg = activeImg.next();
+    console.log("1st");
+
+    if (nextImg.length) {
+      activeImg.removeClass("active");
+      nextImg.addClass("active");
+      console.log("next");
+    }
+  });
+
+  $(".prev").on("click", function () {
+    var activeImg = $(".active");
+    var prevImg = activeImg.prev();
+    console.log("2nd");
+
+    if (prevImg.length) {
+      activeImg.removeClass("active");
+      prevImg.addClass("active");
+      console.log("prev");
+    }
   });
 });

@@ -685,9 +685,30 @@ span {
   padding: 0 4%;
 }
 
-.pagination .button {
+.pagination > .button {
   background-color: #deebfe;
   color: #4d39d1;
+}
+
+/* === Work detail image slides === */
+.image-slides-outer > .next,
+.image-slides-outer > .prev {
+  background-color: #deebfe;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #4d39d1;
+  padding: 10px 20px;
+}
+
+.image-slides-inner img {
+  display: none;
+}
+
+.image-slides-inner img.active {
+  display: inline-block;
 }
 /* ==========================================================================
    Helper classes
