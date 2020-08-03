@@ -132,6 +132,7 @@ h2 {
   font-weight: 300;
   margin: 0 auto;
   padding: 0;
+  line-height: 1.5em;
 }
 
 h3 {
@@ -499,6 +500,27 @@ footer {
 
 .hero h2 {
   padding: 1em 0;
+}
+
+/* === Initial Call To Action === */
+.initial-call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  overflow: hidden;
+  padding: 60px 20px;
+}
+
+.initial-call-to-action h2 {
+  padding-bottom: 1em;
+}
+
+.highlight {
+  text-transform: none;
+  font-weight: 700;
+  border-radius: none;
 }
 
 /* === Work === */
