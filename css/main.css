@@ -122,7 +122,7 @@ p {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.1em;
   font-weight: 900;
   margin: 0 auto;
   padding: 0 0 10px 0;
@@ -411,7 +411,7 @@ footer {
 }
 
 .svg-lt {
-  left: -83vw;
+  left: -85vw;
   top: -8vh;
   right: auto;
   bottom: auto;
@@ -419,14 +419,14 @@ footer {
 }
 
 .svg-lm {
-  left: -87vw;
+  left: -92vw;
   top: 18vh;
   right: auto;
   bottom: auto;
 }
 
 .svg-lb {
-  left: -88vw;
+  left: -92vw;
   top: 44.8vh;
   right: auto;
   bottom: auto;
@@ -503,9 +503,11 @@ footer {
   flex-flow: column wrap;
   align-items: center;
   text-align: center;
-  min-height: 95vh;
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
+  padding: 0 10%;
+  margin: 0 auto;
 }
 
 .hero h2 {
@@ -840,6 +842,10 @@ span {
 ========================================================================== */
 @media only screen and (min-width: 600px) {
   /*------------------ svg stuff*/
+  .hero {
+    padding: 0 30%;
+  }
+
   .hero .content-wrapper {
     position: relative;
     overflow: hidden;
