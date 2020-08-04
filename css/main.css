@@ -360,7 +360,6 @@ footer {
   flex-flow: row nowrap;
   justify-content: space-around;
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
 }
 
 .social-icons {
@@ -382,11 +381,22 @@ footer {
   color: #f9fafc;
 }
 
+/* === Lastly === */
 .lastly {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-flow: column wrap;
+  position: relative;
+  display: inline-block;
+}
+
+.lastly p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: -5px;
+  color: #d6c3ff;
+}
+
+.lastly a {
+  color: #d6c3ff;
 }
 
 /* == SVG ==*/
