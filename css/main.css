@@ -535,14 +535,16 @@ footer {
   padding: 40px 30px;
 }
 
-.initial-call-to-action h2 {
-  padding-bottom: 1em;
+.cta-highlight {
+  background-color: #deebfe;
+  display: inline-block;
+  margin: 1.5em 0;
+  padding: 6px 20px;
+  border-radius: 50px;
 }
 
-.highlight {
-  text-transform: none;
+.cta-highlight h2 {
   font-weight: 700;
-  border-radius: none;
 }
 
 /* === Work === */
