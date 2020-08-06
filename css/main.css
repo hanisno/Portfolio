@@ -654,7 +654,7 @@ span {
 }
 
 .image-container,
-.work-detail img {
+.work-overview img {
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -684,13 +684,13 @@ span {
   font-size: 1.2em;
 }
 
-/* === Work detail === */
-.work-detail {
+/* === Work overview === */
+.work-overview {
   padding: 0 20px;
   text-align: center;
 }
 
-.work-detail img {
+.work-overview img {
   /*width: 80%;*/
   max-width: 83vh;
   margin: 0 auto;
@@ -702,7 +702,7 @@ span {
   transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
 }
 
-.work-detail-text {
+.work-overview-text {
   /*max-width: 90%;*/
   background-color: #ffffff;
   border-radius: 50px;
@@ -713,7 +713,7 @@ span {
   -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
 }
 
-.work-detail p {
+.work-overview p {
   padding: 0 22px;
 }
 
@@ -742,7 +742,7 @@ span {
   font-size: 1em;
 }
 
-/* === Work detail image slides === */
+/* === Work overview image slides === */
 .image-slides-buttons {
   margin-top: 18px;
 }
@@ -1034,8 +1034,8 @@ span {
     min-width: 100%;
   }
 
-  /* === Work detail === */
-  .work-detail {
+  /* === Work overview === */
+  .work-overview {
     margin: 60px 6%;
   }
 
@@ -1180,8 +1180,8 @@ span {
     font-size: 1.2em;
   }
 
-  /* === Work detail === */
-  .work-detail {
+  /* === Work overview === */
+  .work-overview {
     max-width: 120vh;
     margin-left: auto;
     margin-right: auto;
