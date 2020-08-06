@@ -894,6 +894,16 @@ span {
     -moz-box-shadow: 6px 6px 14px 0px rgba(216, 112, 46, 0.2);
   }
 
+  .pagination .button:hover,
+  .image-slides-buttons .next:hover,
+  .image-slides-buttons .prev:hover {
+    background-color: #fb746c;
+    color: #deebfe;
+    box-shadow: 6px 6px 14px 0px rgba(216, 112, 46, 0.2);
+    -webkit-box-shadow: 6px 6px 14px 0px rgba(216, 112, 46, 0.2);
+    -moz-box-shadow: 6px 6px 14px 0px rgba(216, 112, 46, 0.2);
+  }
+
   /* == Menu == */
   /*------------------------- menu text hover stuff*/
   .open #menu-content ul li {
