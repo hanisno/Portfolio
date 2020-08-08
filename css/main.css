@@ -646,7 +646,11 @@ span {
 
 .about-text {
   text-align: left;
-  padding: 1em 1.2em 1em 0;
+  padding: 1em 0;
+}
+
+.about-text a {
+  font-weight: 700;
 }
 
 .about img {
@@ -1012,7 +1016,8 @@ span {
   }
 
   .about-text {
-    max-width: 50%;
+    max-width: 54%;
+    padding: 1em 1.2em 1em 0.5em;
   }
 
   .about .content-wrapper {
@@ -1176,8 +1181,8 @@ span {
     margin-right: 10%;
   }
 
-  .about-text {
-    font-size: 1.2em;
+  .about-text a:hover {
+    color: #fb746c;
   }
 
   /* === Work overview === */
