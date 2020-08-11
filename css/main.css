@@ -2,19 +2,8 @@
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
- * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
- */
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
  */
 
 ::-moz-selection {
@@ -27,10 +16,6 @@
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
 hr {
   display: block;
   height: 1px;
@@ -39,12 +24,6 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -55,19 +34,11 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
-
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
   resize: vertical;
@@ -85,9 +56,9 @@ textarea {
 }
 
 /* ==========================================================================
-   													DEFAULT/MOBILE STYLES
+   DEFAULT MOBILE FIRST STYLES
    ========================================================================== */
-/* === General Styles === */
+/* === General styles === */
 html {
   font-size: 14px;
   margin: 0 auto;
@@ -160,6 +131,20 @@ img {
   height: auto;
 }
 
+article {
+  border-radius: 30px;
+  padding: 40px 20px 10px 20px;
+}
+
+span {
+  background-color: #deebfe;
+  border-radius: 50px;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  margin: 0 auto;
+  line-height: 2.5em;
+}
+
 .button {
   background-color: #fb746c;
   border-radius: 50px;
@@ -169,7 +154,6 @@ img {
   font-weight: 400;
   color: #f9fafc;
   padding: 10px 20px;
-  /*line-height: 65px;*/
 }
 
 .rounded-square-container {
@@ -184,19 +168,8 @@ img {
   -webkit-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
   -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
 }
-/* === AOS Custom Animaton ==*/
 
-[data-aos="my-easing"] {
-  transform: translateX(-100%);
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.2, 3, 0.4, 2);
-  transition-property: transform;
-}
-[data-aos="my-easing"].aos-animate {
-  transform: translateX(0);
-}
-/* === Header - Footer === */
-/* Menu */
+/* === Hamburger menu === */
 #menu-content {
   visibility: hidden;
   position: fixed;
@@ -223,14 +196,14 @@ img {
   padding: 0;
 }
 
-#menu-content ul li a {
-  color: #fff;
-}
-
 #menu-content ul li {
   opacity: 0;
   transform: translateX(50px);
   overflow: hidden;
+}
+
+#menu-content ul li a {
+  color: #fff;
 }
 
 .open #menu-content ul li {
@@ -330,7 +303,7 @@ img {
   height: 4px;
 }
 
-/*Nav menu links*/
+/* === Navigation menu link stylings === */
 ul {
   list-style: none;
   padding: 0.5em 0 0 0;
@@ -348,7 +321,7 @@ ul li a {
   color: #4d39d1;
 }
 
-/*Footer*/
+/* === Footer === */
 footer {
   display: flex;
   justify-content: center;
@@ -407,7 +380,6 @@ footer {
 .svg-rm,
 .svg-rb {
   position: absolute;
-  /*z-index: -10;*/
   width: 124%;
 }
 
@@ -462,7 +434,6 @@ footer {
 .svg-e10,
 .svg-waves {
   position: absolute;
-  /*z-index: -9;*/
 }
 
 .svg-e6 {
@@ -519,7 +490,8 @@ footer {
 .hero h2 {
   padding: 1em 0;
 }
-/* === Initial Call To Action === */
+
+/* === Initial call to action === */
 .initial-call-to-action {
   display: flex;
   justify-content: center;
@@ -551,25 +523,8 @@ footer {
 
 /* === Work === */
 .work {
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
   text-align: center;
   min-height: 50vh;
-}
-
-article {
-  border-radius: 30px;
-  padding: 40px 20px 10px 20px;
-}
-
-span {
-  background-color: #deebfe;
-  border-radius: 50px;
-  text-transform: uppercase;
-  padding: 6px 20px;
-  margin: 0 auto;
-  line-height: 2.5em;
 }
 
 /* === Skills === */
@@ -605,7 +560,7 @@ span {
   padding-top: 15px;
 }
 
-/* === Call to action === */
+/* === Final call to action === */
 .call-to-action {
   padding: 0 20px;
 }
@@ -697,7 +652,6 @@ span {
 }
 
 .work-overview img {
-  /*width: 80%;*/
   max-width: 83vh;
   margin: 0 auto;
 }
@@ -709,7 +663,6 @@ span {
 }
 
 .work-overview-text {
-  /*max-width: 90%;*/
   background-color: #ffffff;
   border-radius: 50px;
   padding: 30px;
@@ -771,26 +724,13 @@ span {
 .image-slides-inner img.active {
   display: inline-block;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
 .hidden {
   display: none !important;
 }
-
-/*
-* Hide only visually, but have it available for screen readers:
-* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-*
-* 1. For long content, line feeds are not interpreted as spaces and small width
-*    causes content to wrap 1 word per line:
-*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
-*/
 
 .sr-only {
   border: 0;
@@ -805,12 +745,6 @@ span {
   /* 1 */
 }
 
-/*
-* Extends the .sr-only class to allow the element
-* to be focusable when navigated to via the keyboard:
-* https://www.drupal.org/node/897638
-*/
-
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
   clip: auto;
@@ -822,32 +756,14 @@ span {
   width: auto;
 }
 
-/*
-* Hide visually and from screen readers, but maintain layout
-*/
-
 .invisible {
   visibility: hidden;
 }
 
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
-  /* 1 */
   display: table;
-  /* 2 */
 }
 
 .clearfix:after {
@@ -859,14 +775,13 @@ span {
    These override the primary ('mobile first') styles.
    ========================================================================== */
 /* ==========================================================================
-	   														TABLET STYLES
+	 TABLET STYLES
 ========================================================================== */
 @media only screen and (min-width: 600px) {
   h1 {
     font-size: 3.2em;
   }
 
-  /*------------------ svg stuff*/
   .hero {
     padding: 0 30%;
   }
@@ -876,8 +791,16 @@ span {
     overflow: hidden;
   }
 
-  /*-------------------------hover stuff*/
-  /*-------------------------geenral link hover stuff*/
+  .open #menu-content {
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .open #menu-bg {
+    transform: scale(150);
+  }
+
   .footer-navigation a:hover,
   .contact > .rounded-square-container > .content-wrapper .info-sub > a:hover,
   .lastly a:hover {
@@ -888,7 +811,6 @@ span {
     color: #deebfe;
   }
 
-  /*------------------------- button hover stuff*/
   .button-container:hover {
     transform: scale(1.05, 1.05);
   }
@@ -910,8 +832,7 @@ span {
     -moz-box-shadow: 6px 6px 14px 0px rgba(216, 112, 46, 0.2);
   }
 
-  /* == Menu == */
-  /*------------------------- menu text hover stuff*/
+  /* == Hamburger menu == */
   .open #menu-content ul li {
     margin: 20px 0;
   }
@@ -926,33 +847,9 @@ span {
     transition-delay: 0s;
     color: #deebfe;
   }
-
-  .open #menu-content ul li:nth-child(2):hover {
-    transition-delay: 0s;
-  }
-
-  .open #menu-content ul li:nth-child(3):hover {
-    transition-delay: 0s;
-  }
-
-  .open #menu-content ul li:nth-child(4):hover {
-    transition-delay: 0s;
-  }
-  /*---------------------------hover stuff ends*/
-
-  .open #menu-content {
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .open #menu-bg {
-    transform: scale(150);
-  }
 }
 
 @media only screen and (min-width: 767px) {
-  /* === Footer === */
   footer nav ul {
     display: flex;
     flex-flow: row wrap;
@@ -960,8 +857,6 @@ span {
 
   /* === Work === */
   .work {
-    /* max-width: 150vh;*/
-    /*max-width: 2000px;*/
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -985,7 +880,7 @@ span {
     text-align: right;
   }
 
-  /* === Skill === */
+  /* === Skills === */
   .skills article {
     max-width: 700px;
   }
@@ -1051,11 +946,10 @@ span {
   }
 }
 /* ==========================================================================
-	   														DESKTOP STYLES
+	 DESKTOP STYLES
 ========================================================================== */
 
 @media only screen and (min-width: 1023px) {
-  /* SVG stuff ==*/
   .svg-lt,
   .svg-lm,
   .svg-lb,
@@ -1116,7 +1010,6 @@ span {
   .svg-e10,
   .svg-waves {
     position: absolute;
-    /*z-index: -9;*/
   }
 
   .svg-e6 {
@@ -1153,8 +1046,6 @@ span {
 
   /* === Work === */
   .work {
-    /* max-width: 150vh;*/
-    /*max-width: 2000px;*/
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -1205,9 +1096,7 @@ span {
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
+   Print styles
    ========================================================================== */
 
 @media print {
@@ -1216,7 +1105,6 @@ span {
   *:after {
     background: transparent !important;
     color: #000 !important;
-    /* Black prints faster */
     box-shadow: none !important;
     text-shadow: none !important;
   }
@@ -1230,10 +1118,7 @@ span {
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
@@ -1246,10 +1131,7 @@ span {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-  /*
-     * Printing Tables:
-     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+
   thead {
     display: table-header-group;
   }
