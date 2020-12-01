@@ -758,9 +758,9 @@ figure {
 
 .mini-detail-item {
   float: left;
-  width: 40%;
+  width: 50%;
   height: 50%;
-  margin: 2.5% 5%;
+  margin: 15px auto;
 }
 
 .mini-detail h2 {
@@ -918,6 +918,66 @@ figure {
     object-fit: contain;
   }
 
+  /* === Work V2=== */
+  #work-page {
+    padding: 0 50px;
+  }
+
+  .summary {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  .title {
+    width: 60%;
+    margin-right: 30px;
+  }
+
+  .summary figure {
+    width: 40%;
+  }
+
+  .objective,
+  .problem,
+  .solution,
+  .style-guide,
+  .wireframe,
+  .full-design {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .objective h3,
+  .problem h3,
+  .solution h3,
+  .style-guide h3,
+  .wireframe h3,
+  .full-design h3 {
+    min-width: 40%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .full-design {
+    justify-content: space-between;
+  }
+
+  .full-design .button-container {
+    margin: 0 0 50px 0;
+  }
+
+  .full-design .button {
+    float: right;
+    margin-right: 15px;
+  }
+
+  /* === Work Main=== */
   #article-b {
     flex-flow: row-reverse;
     text-align: right;
@@ -979,15 +1039,6 @@ figure {
 
   .contact .rounded-square-container {
     min-width: 100%;
-  }
-
-  /* === Work overview === */
-  .work-overview {
-    margin: 60px 6%;
-  }
-
-  #button-full-width {
-    width: 50%;
   }
 }
 /* ==========================================================================
