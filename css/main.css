@@ -99,20 +99,20 @@ h1 {
   font-weight: 900;
   margin: 0 auto;
   padding: 10px 0;
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: 1.333em;
   font-weight: 300;
   padding: 0;
+  margin: 0;
   line-height: 1.5em;
 }
 
 h3 {
   font-size: 2.2em;
   font-weight: 700;
-  margin: 0.7em auto;
+  margin: 13px auto;
   padding: 0;
   text-transform: capitalize;
 }
@@ -135,13 +135,13 @@ img {
 
 article {
   border-radius: 30px;
-  padding: 40px 20px 10px 20px;
+  padding: 0 20px;
+  margin: 30px auto;
 }
 
 span {
   background-color: #deebfe;
   border-radius: 50px;
-  text-transform: uppercase;
   padding: 6px 20px;
   margin: 0 auto;
   line-height: 2.5em;
@@ -358,7 +358,7 @@ footer {
   position: absolute;
   text-align: center;
   width: 100%;
-  bottom: -5px;
+  bottom: 1px;
   color: #d6c3ff;
 }
 
@@ -481,10 +481,6 @@ footer {
   z-index: 1;
 }
 
-.hero h2 {
-  padding: 1em 0;
-}
-
 /* === Initial call to action === */
 .initial-call-to-action {
   display: flex;
@@ -521,6 +517,10 @@ footer {
   min-height: 50vh;
 }
 
+.work p {
+  margin: 20px auto 0 auto;
+}
+
 /* === Skills === */
 .skills {
   display: flex;
@@ -528,16 +528,16 @@ footer {
   align-items: center;
   min-height: 50vh;
   text-align: center;
-  padding: 70px 0;
+  padding: 0 0 50px 0;
 }
 
 .skills .content-wrapper {
-  padding-top: 40px;
+  margin-top: 40px;
 }
 
 .skills article {
   background-color: #ffffff;
-  padding: 40px 30px;
+  padding: 75px 30px;
   margin: 40px;
   max-width: 300px;
   box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.1);
@@ -561,16 +561,14 @@ footer {
 
 .call-to-action .rounded-square-container {
   background-color: #4d39d1;
-  color: #f9fafc;
 }
 
 .call-to-action .content-wrapper {
-  padding: 0 45px;
+  padding: 50px 45px;
 }
 
 .call-to-action p {
-  font-size: 1.2em;
-  padding-bottom: 20px;
+  color: #f9fafc;
 }
 
 .call-to-action a {
@@ -578,7 +576,7 @@ footer {
 }
 
 .call-to-action h1 {
-  padding-bottom: 20px;
+  color: #f9fafc;
 }
 
 /* === About === */
@@ -822,12 +820,8 @@ figure {
 	 TABLET STYLES
 ========================================================================== */
 @media only screen and (min-width: 600px) {
-  h1 {
-    font-size: 3.2em;
-  }
-
   .hero {
-    padding: 0 30%;
+    padding: 0 27%;
   }
 
   .hero .content-wrapper {
@@ -908,11 +902,18 @@ figure {
     margin-right: 5%;
   }
 
-  .work article,
+  .work article {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: left;
+    margin: 80px auto;
+  }
+
   .skills article {
     display: flex;
     flex-flow: row nowrap;
     text-align: left;
+    margin: 40px auto;
   }
 
   .work article img {
@@ -922,13 +923,13 @@ figure {
     object-fit: contain;
   }
 
+  .work-text {
+    margin: 0 28px;
+  }
+
   /* === Work V2=== */
   #work-page {
     padding: 0 50px;
-  }
-
-  .button-container {
-    margin-bottom: 0;
   }
 
   .summary {
@@ -986,7 +987,6 @@ figure {
     flex-flow: row-reverse;
     text-align: right;
   }
-
   /* === Skills === */
   .skills article {
     max-width: 700px;
@@ -1002,12 +1002,17 @@ figure {
     max-width: 150vh;
   }
 
+  .hero h1,
+  .call-to-action h1 {
+    padding-bottom: 20px;
+  }
+
   .call-to-action .content-wrapper {
-    max-width: 767px;
+    max-width: 850px;
   }
 
   .call-to-action p {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   /* === About === */
@@ -1063,7 +1068,7 @@ figure {
 ========================================================================== */
 @media only screen and (min-width: 1023px) {
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .svg-lt,
@@ -1171,12 +1176,14 @@ figure {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    max-width: 90vw;
   }
 
   .skills article {
     display: block;
     text-align: center;
-    max-width: 200px;
+    margin: 25px;
+    max-width: 300px;
   }
 
   .skills-text {
