@@ -105,7 +105,6 @@ h1 {
 h2 {
   font-size: 1.333em;
   font-weight: 300;
-  margin: 0 auto;
   padding: 0;
   line-height: 1.5em;
 }
@@ -126,7 +125,7 @@ h4 {
 }
 
 section {
-  margin: 30px auto;
+  margin: 50px auto;
 }
 
 img {
@@ -146,17 +145,6 @@ span {
   padding: 6px 20px;
   margin: 0 auto;
   line-height: 2.5em;
-}
-
-.button {
-  background-color: #fb746c;
-  border-radius: 50px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: 700;
-  color: #f9fafc;
-  padding: 10px 20px;
 }
 
 .rounded-square-container {
@@ -648,6 +636,31 @@ footer {
   font-size: 1.2em;
 }
 
+.button-container {
+  display: flex;
+  flex-flow: row wrap;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #fb746c;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 500;
+  color: #f9fafc;
+  padding: 10px 20px;
+  margin: 20px auto 0 auto;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
+}
+
+#button-full-width {
+  width: 100%;
+}
+
 /* === Work overview === */
 .work-overview {
   padding: 0 20px;
@@ -657,15 +670,6 @@ footer {
 .work-overview img {
   max-width: 83vh;
   margin: 0 auto;
-}
-
-.button-container {
-  margin: 20px 0;
-  width: 100%;
-  text-align: center;
-  text-transform: capitalize;
-  transition: all 0.5s;
-  transition-timing-function: cubic-bezier(0.2, 3, 0.4, 1);
 }
 
 .work-overview-text {
@@ -724,11 +728,6 @@ footer {
 /* === Work page === */
 #work-page {
   padding: 0 20px;
-}
-
-#button-full-width {
-  display: block;
-  margin: 0 auto;
 }
 
 .summary p {
@@ -854,11 +853,8 @@ figure {
     color: #deebfe;
   }
 
-  .button-container:hover {
-    transform: scale(1.05, 1.05);
-  }
-
   .button:hover {
+    transform: scale(1.05, 1.05);
     box-shadow: 6px 6px 14px 0px rgba(216, 112, 46, 0.2);
     -webkit-box-shadow: 6px 6px 14px 0px rgba(216, 112, 46, 0.2);
     -moz-box-shadow: 6px 6px 14px 0px rgba(216, 112, 46, 0.2);
@@ -923,6 +919,10 @@ figure {
     padding: 0 50px;
   }
 
+  .button-container {
+    margin-bottom: 0;
+  }
+
   .summary {
     display: flex;
     flex-flow: row nowrap;
@@ -933,7 +933,7 @@ figure {
 
   .title {
     width: 60%;
-    margin-right: 30px;
+    margin-right: 70px;
   }
 
   .summary figure {
@@ -950,7 +950,6 @@ figure {
     flex-flow: row nowrap;
     align-items: flex-start;
     width: 100%;
-    margin: 50px auto;
   }
 
   .objective h3,
@@ -966,10 +965,7 @@ figure {
 
   .full-design {
     justify-content: space-between;
-  }
-
-  .full-design .button-container {
-    margin: 0 0 50px 0;
+    align-items: center;
   }
 
   .full-design .button {
@@ -1027,6 +1023,19 @@ figure {
   }
 
   /* === About V2=== */
+  .mini-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  .mini-detail-item {
+    float: none;
+    height: unset;
+    width: unset;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   /* === Contact === */
   .contact {
@@ -1045,6 +1054,10 @@ figure {
 	 DESKTOP STYLES
 ========================================================================== */
 @media only screen and (min-width: 1023px) {
+  html {
+    font-size: 22px;
+  }
+
   .svg-lt,
   .svg-lm,
   .svg-lb,
@@ -1178,6 +1191,27 @@ figure {
     max-width: 120vh;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  /* === Work V2 === */
+  #work-page section {
+    margin: 100px auto;
+  }
+
+  #work-page {
+    padding: 40px 140px;
+  }
+
+  #work-page .button-container {
+    flex-flow: row nowrap;
+  }
+
+  #work-page .button {
+    margin: 30px 20px 0 0;
+  }
+
+  #work-page #button-full-width {
+    width: auto;
   }
 }
 
