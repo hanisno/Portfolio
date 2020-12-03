@@ -584,25 +584,17 @@ footer {
   padding: 0 20px;
 }
 
-.about .rounded-square-container,
-.contact .rounded-square-container {
-  min-height: 1vh;
-  padding: 50px 30px;
-  background-color: #ffffff;
-  color: #4d39d1;
-}
-
 .about-text {
   text-align: left;
   padding: 1em 0;
 }
 
-.about-text a {
-  font-weight: 700;
+.about p {
+  margin-bottom: 16px;
 }
 
-.about img {
-  border-radius: 30px;
+.about #button-full-width {
+  margin: 0 auto;
 }
 
 .image-container,
@@ -614,6 +606,13 @@ footer {
 }
 
 /* === Contact === */
+.contact .rounded-square-container {
+  min-height: 1vh;
+  padding: 50px 30px;
+  background-color: #ffffff;
+  color: #4d39d1;
+}
+
 .contact {
   padding: 0 20px;
   min-height: 100vh;
@@ -1017,25 +1016,20 @@ figure {
 
   /* === About === */
   .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    padding: 0 100px;
   }
 
-  .about-text {
-    max-width: 54%;
-    padding: 1em 1.2em 1em 0.5em;
+  .about img {
+    width: 80%;
   }
 
-  .about .content-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+  .about #button-full-width {
+    width: unset;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  /* === About V2=== */
+  /* === Work V2=== */
   .mini-detail {
     display: flex;
     justify-content: space-between;
@@ -1192,15 +1186,27 @@ figure {
 
   /* === About === */
   .about {
-    max-width: 150vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
-  .about-text a:hover {
-    color: #fb746c;
+  .about img {
+    width: 100%;
   }
 
+  .about-text {
+    max-width: 40%;
+    padding: 0 70px;
+  }
+
+  .about .content-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
   /* === Work overview === */
   .work-overview {
     max-width: 120vh;
