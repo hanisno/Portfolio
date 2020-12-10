@@ -110,7 +110,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.2em;
+  font-size: 1.6em;
   font-weight: 700;
   margin: 13px auto;
   padding: 0;
@@ -636,6 +636,17 @@ footer {
   padding: 0 20px;
 }
 
+#work-page img {
+  border-radius: 33px;
+  box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -webkit-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+  -moz-box-shadow: 6px 9px 23px 0px rgba(117, 138, 180, 0.2);
+}
+
+#work-page .no-shadow {
+  box-shadow: none;
+}
+
 .summary p {
   color: #4d39d1;
 }
@@ -907,35 +918,27 @@ figure {
     margin-right: 0;
   }
 
-  .objective,
-  .problem,
-  .solution,
-  .style-guide,
-  .wireframe,
-  .full-design {
+  .section-text,
+  .section-result {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
     width: 100%;
   }
 
-  .objective h3,
-  .problem h3,
-  .solution h3,
-  .style-guide h3,
-  .wireframe h3,
-  .full-design h3 {
+  .section-text h3,
+  .section-result h3 {
     min-width: 40%;
     padding: 0;
     margin: 0;
   }
 
-  .full-design {
+  .section-result {
     justify-content: space-between;
     align-items: center;
   }
 
-  .full-design .button {
+  .section-result .button {
     float: right;
     margin-right: 15px;
   }

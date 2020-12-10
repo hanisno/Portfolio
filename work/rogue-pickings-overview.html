@@ -7,7 +7,7 @@
       name="description"
       content="Portfolio of Hanis Noor, a front-end web designer and developer"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#deebfe" />
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="apple-touch-icon" href="../icon.png" />
@@ -54,61 +54,68 @@
       </div>
     </header>
 
-    <main>
-      <section class="work-overview">
-        <div class="content-wrapper">
-          <h1>Rogue Pickings</h1>
-          <div
-            class="image-slides-outer"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-once="true"
-          >
-            <div class="image-slides-inner">
-              <img
-                src="../img/rogue-pickings-pc.png"
-                alt="Rogue Pickings website preview on desktop browser"
-                class="active"
-              />
-              <img
-                src="../img/rogue-pickings-tablet.png"
-                alt="Rogue Pickings website preview on tablet browser"
-              />
-              <img
-                src="../img/rogue-pickings-ipx.png"
-                alt="Rogue Pickings website preview on iPhone X browser"
-              />
-            </div>
-            <div class="image-slides-buttons">
-              <a href="#" class="prev"><i class="fas fa-angle-left"></i></a>
-              <a href="#" class="next"><i class="fas fa-angle-right"></i></a>
+    <main id="work-page">
+      <section class="summary">
+          <div class="title">
+            <h1>Rogue Pickings</h1>
+            <h3>Food truck webpage development</h3>
+            <p>
+              Rogue Pickings is a one-page site for a sample food truck company. I developed this mobile-friendly webpage using HTML and CSS.
+            </p>
+            <div class="button-container">
+              <a
+                href="https://hanisno.github.io/rogue-pickings/"
+                target="_blank"
+                class="button"
+                id="button-full-width"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/hanisno/rogue-pickings"
+                target="_blank"
+                class="button"
+                id="button-full-width"
+                >Source code</a
+              >
             </div>
           </div>
-          <div
-            class="work-overview-text"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-once="true"
-            data-aos-anchor="top-top"
-          >
-            <div class="work-overview-sub">
-              <h3>Description</h3>
-              <p>
-                Rogue Pickings is a sample site for a food truck company. It is
-                styled based on a design comp and features a responsive one-page
-                website coded using HTML and CSS.
-              </p>
+          <figure><img src="../img/rogue-pickings-preview.png" class="no-shadow"/></figure>
+      </section>
+
+        <section class="mini-detail">
+            <div class="mini-detail-item">
+              <h2>Area</h2>
+              <p>Web development</p>
             </div>
-            <div class="work-overview-sub">
-              <h3>Completed</h3>
-              <p>May 2020</p>
+            <div class="mini-detail-item">
+              <h2>Deliverables</h2>
+              <p>Live website</p>
             </div>
-            <div class="work-overview-sub">
-              <h3>Tech</h3>
-              <span>HTML</span>
-              <span>CSS</span>
+            <div class="mini-detail-item">
+              <h2>Platform</h2>
+              <p>Desktop, tablet, mobile</p>
             </div>
-            <div class="work-overview-sub">
+            <div class="mini-detail-item">
+              <h2>Tech</h2>
+              <p>HTML, CSS</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-img">
+          <figure><img src="../img/rogue-pickings-device-mockup.jpg" /></figure>
+        </section>
+        
+          <section class="section-text">
+            <h3>Objective</h3>
+            <p>
+              I coded this one-page site based on a design comp. It is fully responsive on mobile, tablet and desktop screens and will help customers discover the company’s offering and menu.
+            </p>
+          </section>
+
+          <section class="section-result">
+            <h3>Result</h3>
+            <div class="section-result-content">
               <div class="button-container">
                 <a
                   href="https://hanisno.github.io/rogue-pickings/"
@@ -118,27 +125,22 @@
                   >Live Demo</a
                 >
               </div>
-              <div class="button-container">
-                <a
-                  href="https://github.com/hanisno/rogue-pickings"
-                  target="_blank"
-                  class="button"
-                  id="button-full-width"
-                  >Source Code</a
-                >
-              </div>
             </div>
           </div>
-          <div class="pagination">
-            <a href="nexus-overview.html" class="button"
-              ><i class="fas fa-chevron-left"></i> Prev</a
-            >
-            <a href="kopikaw-overview.html" class="button"
-              >Next <i class="fas fa-chevron-right"></i
-            ></a>
-          </div>
-        </div>
-      </section>
+        </section>
+
+        <section><figure><img src="../img/rogue-pickings-browser-mockup.png" class="no-shadow"></figure></section>
+
+        <section class="other-work-links">
+          <h3>Other work</h3>
+          <a href="index.html" class="button" id="button-full-width">All</a>
+          <a href="kopikaw-overview.html" class="button" id="button-full-width">Kopikaw</a>
+          <a href="sit-conmigo-overview.html" class="button" id="button-full-width">Sit Conmigo</a>
+          <a href="tea-time-overview.html" class="button" id="button-full-width">Tea Time</a>
+          <a href="nexus-overview.html" class="button" id="button-full-width">Nexus</a>
+          <a href="rogue-pickings-overview.html" class="button" id="button-full-width">Rogue Pickings</a>
+          
+        </section>
     </main>
 
     <footer>
@@ -185,7 +187,7 @@
       data-aos-duration="1200"
       data-aos-once="true"
     >
-      <p>Created with ♥ by <a href="/">Hanis</a></p>
+      <p>Designed and coded by <a href="/">Hanis</a></p>
       <img src="../img/waves-footer.svg" alt="" />
     </div>
 
