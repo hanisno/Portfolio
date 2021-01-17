@@ -139,13 +139,13 @@ article {
   margin: 30px auto;
 }
 
-span {
+/*span {
   background-color: #deebfe;
   border-radius: 50px;
   padding: 6px 20px;
   margin: 0 auto;
   line-height: 2.5em;
-}
+}*/
 
 .rounded-square-container {
   display: flex;
@@ -515,7 +515,20 @@ footer {
 }
 
 .work p {
-  margin: 20px auto 0 auto;
+  margin: 10px auto 0 auto;
+}
+
+.work span {
+  background-color: #deebfe;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 7px 6px;
+  width: max-content;
+}
+
+.work .span-container {
+  display: inline-flex;
+  flex-flow: row wrap;
 }
 
 /* === Skills === */
